@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "stdio.h": "c",
+        "ctype.h": "c"
+    },
+    "cSpell.words": [
+        "Allman",
+        "fahr",
+        "inword",
+        "MAXLINE",
+        "nother",
+        "nwhite",
+        "Parens",
+        "Struct"
+    ]
+}

@@ -1,0 +1,314 @@
+Which of the following is *not* a feature of the C Language?
+
+ Garbage collection
+
+ Functions
+
+ Conditional execution
+
+ Iteration
+
+What function is used in C to provide very simple dynamic memory allocation?
+
+ post / load
+
+ malloc / free
+
+ new / str
+
+ get / put
+
+What percentage of the UNIX operating system (at the time of the writing of the text book - 1978) was written in C?
+
+ 20 percent
+
+ 50 percent
+
+ 80 percent
+
+ 90 percent
+
+What early computer was being used for C development in 1978? Where do C developers find Input/Output capabilities when writing C?
+
+ CDC 6500
+
+ HP 21-MX
+
+ Burroughs B-3900
+
+ PDP/11
+
+ Cray-1
+
+What is the order in which the following languages were developed from first to last?
+
+ BCPL / B / C
+
+ B / C / BCPL
+
+ A / B / C
+
+ B / C / B / X
+
+Which is larger, a word or byte?
+
+ word
+
+ neither, they are the same size
+
+ byte
+
+Which type in C is used to store 8-bit values?
+
+ double
+
+ char
+
+ int
+
+ byte
+
+ long
+
+The C Compiler takes C source code as input. What does the C compiler produce?
+
+ Properly indented C code
+
+ Optimized JavaScript
+
+ Machine language
+
+ B Source code
+
+Before Brian Kernighan wrote the "C Programming Book", what was he writing?
+
+ Billing programs in COBOL
+
+ Web servers to support geo-location
+
+ A series of tutorial documents on topics like B and C
+
+What was the main shortcoming of the "B" language? (a precursor to C)
+
+ It was not good at handling bytes (8-bit characters)
+
+ It did not support the FORTRAN FORMAT statement
+
+ It did not have first class functions
+
+ It did not use indentation as syntax
+
+When was the C language "under construction" as it was co-evolving with the creation of UNIX?
+
+ 1985
+
+ 1975
+
+ 1965
+
+ 1980
+
+What was a key goal in the design of the C language?
+
+ Implement all the core structures of Python (list, dict, tuple)
+
+ The need to precisely describe the headers in the TSP/IO protocols
+
+ Replicating the FORTRAN PRINT and computer GOTO language elements
+
+ Reduce the need to write assembly language in UNIX
+
+The C *language* has no provisions for Input/Output in the language. Where do C developers find Input/Output capabilities when writing C?
+
+ In FORTRAN
+
+ In the pre-processor
+
+ On a USB stick
+
+ In standard libraries
+
+Which organization created the first official C standard?
+
+ IETF
+
+ ISO
+
+ ANSI
+
+ Posix
+
+Which of the following was pre-1978?
+
+ FORTRAN was created
+
+ Minix was created
+
+ Linux was created
+
+ C++ was created
+
+Before UNIX, what was the most popular portable operating system?
+
+ None of these
+
+ ARPANET
+
+ MTS (Michigan Terminal System)
+
+ Minix
+
+ Lunix
+
+What computer inspired the rewrite of UNIX and creation of C?
+
+ DEC PDP 11/20
+
+ Interdata 7/32
+
+ DEC VAX
+
+ DEC PDP 1
+
+What operating system powers most of the AWS (Amazon Web Servces) server resources?
+
+ Linux
+
+ Windows
+
+ UNIX
+
+ Minix
+
+Which of these came first?
+
+ Multics
+
+ Unix
+
+ Minix
+
+ Liunx
+
+Which university produced and distributed a very popular UNIX distribution in the 1970's?
+
+ MIT
+
+ Harvard
+
+ Stanford Univerity
+
+ University of Berkeley
+
+What went wrong in the late 1980's that took UNIX out of the running to be the universal operating system? This action led to the creation of a series of UNIX-like operating systems that now dominate the market.
+
+ C Pointers were just too complex for the average programmer to understand.
+
+ UNIX's lack of support for FORTRAN was a major barrier to adoption
+
+ UNIX was never able to fully support the emerging TCP/IP stack needed for ARPANET, NSFNet, and the modern Internet
+
+ The owners of UNIX tried to make money with it by using restrictive licensing
+
+What company created UNIX and C?
+
+ AT&T
+
+ Microsoft
+
+ IBM
+
+ Sun Microsystems
+
+
+
+
+
+
+Which of the following is not a feature of the C Language?
+
+Garbage collection
+
+What function is used in C to provide very simple dynamic memory allocation?
+
+malloc / free
+
+What percentage of the UNIX operating system (at the time of the writing of the text book - 1978) was written in C?
+
+90 percent
+
+What early computer was being used for C development in 1978?
+
+PDP/11
+
+What is the order in which the following languages were developed from first to last?
+
+BCPL / B / C
+
+Which is larger, a word or byte?
+
+word
+
+Which type in C is used to store 8-bit values?
+
+char
+
+The C Compiler takes C source code as input. What does the C compiler produce?
+
+Machine language
+
+Before Brian Kernighan wrote the "C Programming Book," what was he writing?
+
+A series of tutorial documents on topics like B and C
+
+What was the main shortcoming of the "B" language? (a precursor to C)
+
+It was not good at handling bytes (8-bit characters)
+
+When was the C language "under construction" as it was co-evolving with the creation of UNIX?
+
+1975
+
+What was a key goal in the design of the C language?
+
+Reduce the need to write assembly language in UNIX
+
+The C language has no provisions for Input/Output in the language. Where do C developers find Input/Output capabilities when writing C?
+
+In standard libraries
+
+Which organization created the first official C standard?
+
+ANSI
+
+Which of the following was pre-1978?
+
+FORTRAN was created
+
+Before UNIX, what was the most popular portable operating system?
+
+None of these
+
+What computer inspired the rewrite of UNIX and creation of C?
+
+DEC PDP 11/20
+
+What operating system powers most of the AWS (Amazon Web Services) server resources?
+
+Linux
+
+Which of these came first?
+
+Multics
+
+Which university produced and distributed a very popular UNIX distribution in the 1970s?
+
+University of Berkeley
+
+What went wrong in the late 1980s that took UNIX out of the running to be the universal operating system?
+
+The owners of UNIX tried to make money with it by using restrictive licensing
+
+What company created UNIX and C?
+
+AT&T
