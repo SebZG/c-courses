@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/UserPC/OneDrive/Documents/c-coursess/udemy/beginner-to-master/sec-14-dynamic-memory-allocation/sec-14-91-exercise-linked-lists-library-management-system/practice",
-      "program": "c:/Users/UserPC/OneDrive/Documents/c-coursess/udemy/beginner-to-master/sec-14-dynamic-memory-allocation/sec-14-91-exercise-linked-lists-library-management-system/practice/build/Debug/outDebug",
+      "cwd": "c:/Users/UserPC/OneDrive/Documents/c-coursess/udemy/beginner-to-master/sec-3-variables-&-data-types/sec-3-13-computer-memory",
+      "program": "c:/Users/UserPC/OneDrive/Documents/c-coursess/udemy/beginner-to-master/sec-3-variables-&-data-types/sec-3-13-computer-memory/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
