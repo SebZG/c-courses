@@ -4,11 +4,11 @@
 int main()
 {
     char arrA[101];
-    int i=0;
+    int i = 0;
 
     fgets(arrA, sizeof(arrA), stdin);
 
-    while(arrA[i]!=0)
+    while (arrA[i] != 0)
     {
         printf("%c", arrA[i]);
         i++;

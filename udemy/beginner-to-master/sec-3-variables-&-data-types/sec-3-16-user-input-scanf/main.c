@@ -8,11 +8,11 @@ int main()
 
     // & the address of
 
-    printf("Enter a character:");
+    printf("Enter a character: ");
 
     scanf("%c", &x);
 
-    printf("\nThank you you have entered the character %c\n", x);
+    printf("\nThank you, you have entered the character: %c\n", x);
 
     return 0;
 }

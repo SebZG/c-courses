@@ -8,7 +8,7 @@ int main()
     int *ptr;
 
     // numOfElements = 50;
-    printf("How many elements do you want?:");
+    printf("How many elements do you want?: ");
     fflush(stdin);
     scanf("%d", &numOfElements);
 
@@ -25,6 +25,8 @@ int main()
     {
         printf("\nElement [%d]: %d", i, ptr[i]);
     }
+
+    printf("\n");
 
     free(ptr);
 

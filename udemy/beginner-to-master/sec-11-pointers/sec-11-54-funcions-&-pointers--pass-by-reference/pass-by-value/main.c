@@ -24,5 +24,3 @@ void printFunc(int a)
 
     printf("\nFrom Function (after mod): %d", a);
 }
-
-

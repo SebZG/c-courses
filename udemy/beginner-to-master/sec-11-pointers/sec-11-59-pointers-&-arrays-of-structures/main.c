@@ -13,7 +13,7 @@ typedef struct dairyFreeMilk DFM_Bottle;
 int main()
 {
     DFM_Bottle DFM_Btl[3];
-    DFM_Bottle* DFM_ptr;
+    DFM_Bottle *DFM_ptr;
 
     // initalise struct
     DFM_Btl[0].DFM_ID = 10000;

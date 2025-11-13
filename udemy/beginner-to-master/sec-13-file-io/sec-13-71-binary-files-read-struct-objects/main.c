@@ -13,7 +13,7 @@ typedef struct Pen_type Pen;
 
 int main()
 {
-    FILE* filePtr;
+    FILE *filePtr;
     Pen P0, P1;
 
     //=====Read from a binary file=====//
@@ -30,8 +30,8 @@ int main()
     }
 
     //write read from file
-    fread(&P0,sizeof(Pen),1,filePtr);
-    fread(&P1,sizeof(Pen),1,filePtr);
+    fread(&P0, sizeof(Pen), 1, filePtr);
+    fread(&P1, sizeof(Pen), 1, filePtr);
 
     //print content of both structures
     printf("Structure P0:");
@@ -48,4 +48,3 @@ int main()
 
     return 0;
 }
-

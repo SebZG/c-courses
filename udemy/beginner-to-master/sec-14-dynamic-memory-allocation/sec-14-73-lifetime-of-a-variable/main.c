@@ -25,8 +25,8 @@ int main()
 
 int intAdder(int a, int b)
 {
-    int resultAdd;  // live in the stack
-                    // during execution of this function
+    int resultAdd; // live in the stack
+                   // during execution of this function
 
     resultAdd = a + b;
 

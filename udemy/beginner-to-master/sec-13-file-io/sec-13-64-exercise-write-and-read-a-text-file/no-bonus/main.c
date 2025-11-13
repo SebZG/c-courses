@@ -3,17 +3,17 @@
 
 int main()
 {
-    FILE* fileInPtr;
-    FILE* fileOutPtr;
+    FILE *fileInPtr;
+    FILE *fileOutPtr;
     char line[200];
 
     fileInPtr = fopen("Weather Information.txt", "r");
 
-    while(!feof(fileInPtr))
+    while (!feof(fileInPtr))
     {
         fgets(line, 200, fileInPtr);
 
-        if(line[0] == '.')
+        if (line[0] == '.')
         {
             fileOutPtr = fopen("Happy today.txt", "w");
             fprintf(fileOutPtr, "I am so happy, I found the dot");

@@ -16,7 +16,7 @@ int main()
     int i;
     customer *arrOfCustomers;
 
-    printf("How many customers are allowed tonight?:");
+    printf("How many customers are allowed tonight?: ");
     fflush(stdin);
     scanf("%d", &numOfCustomers);
 
@@ -38,15 +38,15 @@ int main()
         // get customer data+
         printf("\n\nCustomer Number: %d", i);
 
-        printf("\nFirst Name:");
+        printf("\nFirst Name: ");
         fflush(stdin);
         scanf("%s", &arrOfCustomers[i].fName);
 
-        printf("Last Name:");
+        printf("Last Name: ");
         fflush(stdin);
         scanf("%s", &arrOfCustomers[i].lName);
 
-        printf("Phone Number:");
+        printf("Phone Number: ");
         fflush(stdin);
         scanf("%s", &arrOfCustomers[i].pNum);
     }
@@ -57,10 +57,12 @@ int main()
     for (i = 0; i < numOfCustomers; i++)
     {
         printf("\n\nCustomer Number: %d", i);
-        printf("\nFirst Name:%s", arrOfCustomers[i].fName);
-        printf("\nLast Name:%s", arrOfCustomers[i].lName);
-        printf("\nPhone Number:%s", arrOfCustomers[i].pNum);
+        printf("\nFirst Name :%s", arrOfCustomers[i].fName);
+        printf("\nLast Name: %s", arrOfCustomers[i].lName);
+        printf("\nPhone Number: %s", arrOfCustomers[i].pNum);
     }
+
+    printf("\n");
 
     free(arrOfCustomers);
 

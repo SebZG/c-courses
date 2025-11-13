@@ -4,15 +4,17 @@
 int main()
 {
     int myNormalInt;
-    int* pInt;
+    int *pInt;
 
     myNormalInt = 25;
 
     pInt = &myNormalInt;
 
-    printf("pInt lives in the address: %x\n", &pInt);
+    printf("myNormalInt has the data: %d\n", myNormalInt);
+    printf("myNormalInt lives in the address: %x\n", &myNormalInt);
+    printf("pInt has the data: %d\n", *pInt);
     printf("pInt points to the address: %x\n", pInt);
-    printf("pInt lives in the data: %d\n", *pInt);
+    printf("pInt lives in the address: %x\n", &pInt);
 
     // proof that we are reading a ptr to the original data
     myNormalInt = 39;

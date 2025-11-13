@@ -7,21 +7,21 @@ int main()
 
     PwrBnksNo = 0;
 
-    if(PwrBnksNo>10)
+    if (PwrBnksNo > 10)
     {
         printf("You have too many power banks, please try not to get more");
     }
-    else if(PwrBnksNo>7)
+    else if (PwrBnksNo > 7)
     {
-       printf("You have enough power banks");
+        printf("You have enough power banks");
     }
-    else if(PwrBnksNo>4)
+    else if (PwrBnksNo > 4)
     {
-       printf("You are ok but get some more power banks");
+        printf("You are ok but get some more power banks");
     }
-    else if(PwrBnksNo>=1)
+    else if (PwrBnksNo >= 1)
     {
-       printf("You need to buy more power banks");
+        printf("You need to buy more power banks");
     }
     else
     {

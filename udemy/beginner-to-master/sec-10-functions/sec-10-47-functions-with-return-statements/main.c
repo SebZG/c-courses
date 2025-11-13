@@ -24,7 +24,7 @@ int squareInt(int a)
 {
     int answer;
 
-    answer = a*a;
+    answer = a * a;
 
     return answer;
 }
@@ -33,7 +33,7 @@ int cubeInt(int a)
 {
     int answer;
 
-    answer = a*a*a;
+    answer = a * a * a;
 
     return answer;
 }

@@ -17,7 +17,7 @@ int main()
     int i;
     btl *bottlePtr;
 
-    printf("How many bottles do you want?:");
+    printf("How many bottles do you want?: ");
     fflush(stdin);
     scanf("%d", &numOfBottles);
 

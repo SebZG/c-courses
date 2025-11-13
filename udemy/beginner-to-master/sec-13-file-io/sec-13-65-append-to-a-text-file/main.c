@@ -3,7 +3,7 @@
 
 int main()
 {
-    FILE* filePtr;
+    FILE *filePtr;
     char a0[] = "This is a beautiful line";
     char a1[] = "This is a more beautiful line";
     char a2[] = "This is the most beautiful line here...";
@@ -17,5 +17,4 @@ int main()
     fclose(filePtr);
 
     return 0;
- }
-
+}

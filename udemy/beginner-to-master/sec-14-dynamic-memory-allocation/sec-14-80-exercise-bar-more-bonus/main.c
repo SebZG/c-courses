@@ -10,8 +10,8 @@ struct customer_t
 
 typedef struct customer_t customer;
 
-void printAllCustomers(customer *cPtrHead, int numOfCustomers);
 void getCustomerData(customer *cPtrHead, int customerIndexNumber);
+void printAllCustomers(customer *cPtrHead, int numOfCustomers);
 
 int main()
 {
@@ -23,7 +23,7 @@ int main()
     {
         // ask if we want to enter data for another customer or exit
         // on exit all information for all customers is printed
-        printf("\nEnter Y to enter a new customer or Q to exit:");
+        printf("\nEnter Y to enter a new customer or Q to exit: ");
         fflush(stdin);
         scanf("%c", &instruction);
 
@@ -60,7 +60,8 @@ int main()
                     printf("Success: %d bytes were allocated", numOfCustomers * sizeof(customer));
                 }
             }
-            getCustomerData(arrOfCustomers, numOfCustomers - 1);  // populate customer at index-1
+
+            getCustomerData(arrOfCustomers, numOfCustomers - 1); // populate customer at index-1
         }
         else if (instruction == 'Q')
         {
@@ -73,9 +74,29 @@ int main()
         }
     }
 
+    printf("\n");
+
     free(arrOfCustomers);
 
     return 0;
+}
+
+void getCustomerData(customer *cPtrHead, int customerIndexNumber)
+{
+    // get customer data
+    printf("\n\nCustomer Number: %d", customerIndexNumber);
+
+    printf("\nFirst Name: ");
+    fflush(stdin);
+    scanf("%s", &cPtrHead[customerIndexNumber].fName);
+
+    printf("Last Name: ");
+    fflush(stdin);
+    scanf("%s", &cPtrHead[customerIndexNumber].lName);
+
+    printf("Phone Number: ");
+    fflush(stdin);
+    scanf("%s", &cPtrHead[customerIndexNumber].pNum);
 }
 
 void printAllCustomers(customer *cPtrHead, int numOfCustomers)
@@ -87,26 +108,8 @@ void printAllCustomers(customer *cPtrHead, int numOfCustomers)
     for (i = 0; i < numOfCustomers; i++)
     {
         printf("\n\nCustomer Number: %d", i);
-        printf("\nFirst Name:%s", cPtrHead[i].fName);
-        printf("\nLast Name:%s", cPtrHead[i].lName);
-        printf("\nPhone Number:%s", cPtrHead[i].pNum);
+        printf("\nFirst Name: %s", cPtrHead[i].fName);
+        printf("\nLast Name: %s", cPtrHead[i].lName);
+        printf("\nPhone Number: %s", cPtrHead[i].pNum);
     }
-}
-
-void getCustomerData(customer *cPtrHead, int customerIndexNumber)
-{
-    // get customer data
-    printf("\n\nCustomer Number: %d", customerIndexNumber);
-
-    printf("\nFirst Name:");
-    fflush(stdin);
-    scanf("%s", &cPtrHead[customerIndexNumber].fName);
-
-    printf("Last Name:");
-    fflush(stdin);
-    scanf("%s", &cPtrHead[customerIndexNumber].lName);
-
-    printf("Phone Number:");
-    fflush(stdin);
-    scanf("%s", &cPtrHead[customerIndexNumber].pNum);
 }

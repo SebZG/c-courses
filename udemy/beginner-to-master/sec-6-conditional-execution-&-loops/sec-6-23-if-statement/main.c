@@ -7,7 +7,7 @@ int main()
 
     PwrBnksNo = 10;
 
-    if(PwrBnksNo>=10)
+    if (PwrBnksNo >= 10)
     {
         printf("You have too many power banks, please try not to get more");
     }

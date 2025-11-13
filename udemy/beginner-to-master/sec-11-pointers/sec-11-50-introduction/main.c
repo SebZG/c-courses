@@ -3,14 +3,14 @@
 
 int main()
 {
-    int var_1; // data type = int
-    int var_2; // data type = int
-    int var_3; // data type = int
-    int var_4; // data type = int
-    int var_5; // data type = int
-    int var_6; // data type = int
-    int* var_7; // data type = int pointer
-    int var_8; // data type = int
+    int var_1;  // data type = int
+    int var_2;  // data type = int
+    int var_3;  // data type = int
+    int var_4;  // data type = int
+    int var_5;  // data type = int
+    int var_6;  // data type = int
+    int *var_7; // data type = int pointer
+    int var_8;  // data type = int
 
     var_1 = 0x5DA96D;
     var_2 = 0x4DABA5;

@@ -10,8 +10,8 @@ struct customer_t
 
 typedef struct customer_t customer;
 
-void printAllCustomers(customer *cPtrHead, int numOfCustomers);
 void getCustomerData(customer *cPtrHead, int customerIndexNumber);
+void printAllCustomers(customer *cPtrHead, int numOfCustomers);
 
 int main()
 {
@@ -19,7 +19,7 @@ int main()
     int i;
     customer *arrOfCustomers;
 
-    printf("How many customers are allowed tonight?:");
+    printf("How many customers are allowed tonight?: ");
     fflush(stdin);
     scanf("%d", &numOfCustomers);
 
@@ -53,15 +53,15 @@ void getCustomerData(customer *cPtrHead, int customerIndexNumber)
     // get customer data+
     printf("\n\nCustomer Number: %d", customerIndexNumber);
 
-    printf("\nFirst Name:");
+    printf("\nFirst Name: ");
     fflush(stdin);
     scanf("%s", &cPtrHead[customerIndexNumber].fName);
 
-    printf("Last Name:");
+    printf("Last Name: ");
     fflush(stdin);
     scanf("%s", &cPtrHead[customerIndexNumber].lName);
 
-    printf("Phone Number:");
+    printf("Phone Number: ");
     fflush(stdin);
     scanf("%s", &cPtrHead[customerIndexNumber].pNum);
 }
@@ -75,8 +75,10 @@ void printAllCustomers(customer *cPtrHead, int numOfCustomers)
     for (i = 0; i < numOfCustomers; i++)
     {
         printf("\n\nCustomer Number: %d", i);
-        printf("\nFirst Name:%s", cPtrHead[i].fName);
-        printf("\nLast Name:%s", cPtrHead[i].lName);
-        printf("\nPhone Number:%s", cPtrHead[i].pNum);
+        printf("\nFirst Name: %s", cPtrHead[i].fName);
+        printf("\nLast Name: %s", cPtrHead[i].lName);
+        printf("\nPhone Number: %s", cPtrHead[i].pNum);
     }
+
+    printf("\n");
 }

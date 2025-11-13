@@ -3,8 +3,8 @@
 
 int main()
 {
-    int arr[3] = {22,55,88};
-    int* arrPtr; // 4 bytes
+    int arr[3] = {22, 55, 88};
+    int *arrPtr; // 4 bytes
 
     printf("\n\nPrinting from array reference: ");
     printf("\n%d from 0x%x", arr[0], &arr[0]);
@@ -26,7 +26,6 @@ int main()
     //interesting, not recommended
     arrPtr++; // increment by 4 bytes
     printf("\n%d from 0x%x", *arrPtr, arrPtr);
-
 
 
     return 0;

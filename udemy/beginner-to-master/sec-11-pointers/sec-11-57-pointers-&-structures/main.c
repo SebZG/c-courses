@@ -16,7 +16,7 @@ int main()
     chocBar_t CB1;
     chocBar_t CB2;
     chocBar_t CB3;
-    chocBar_t* cbPtr;
+    chocBar_t *cbPtr;
 
     CB0.chocBarID = 3395;
     CB0.price = 0.39;

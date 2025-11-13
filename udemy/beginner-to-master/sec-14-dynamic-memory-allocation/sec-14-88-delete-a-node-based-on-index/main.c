@@ -4,28 +4,28 @@
 struct node_t
 {
     int data;
-    struct node_t* next;
+    struct node_t *next;
 };
 
 typedef struct node_t node;
 
-void printLL(node* head);
-node* createNodeLL(int data);
-node* addNodeToHead(node* head, node* newNode);
-node* findNodeContaining(node* head, int data);
-void insertNodeInPosition(node* head, int position, int data);
-void deleteNodeFromPosition(node* head, int position);
-node* deleteHead(node* head);
+node *createNodeLL(int data);
+node *addNodeToHead(node *head, node *newNode);
+void insertNodeInPosition(node *head, int position, int data);
+node *findNodeContaining(node *head, int data);
+void deleteNodeFromPosition(node *head, int position);
+node *deleteHead(node *head);
+void printLL(node *head);
 
 int main()
 {
-    node* tmp;   // pointer
-    node* head;  // pointer to the first node
+    node *tmp;  // pointer
+    node *head; // pointer to the first node
     int i = 0;
 
     head = NULL;
 
-    for (i = 0; i < 20; i++)  // create 20 nodes
+    for (i = 0; i < 10; i++) // create 20 nodes
     {
         tmp = createNodeLL(1 + i);
         head = addNodeToHead(head, tmp);
@@ -33,38 +33,26 @@ int main()
 
     printLL(head);
 
-    tmp = findNodeContaining(head, 77);
-    printf("\n\nNode at addr:0x%x contains value 77\n", tmp);
+    insertNodeInPosition(head, 1, 3);
 
-    // insertNodeInPosition(head, 2, 3);
+    tmp = findNodeContaining(head, 3);
+    printf("\nNode at addr:0x%x contains value: %d\n", tmp, tmp->data);
 
-    deleteNodeFromPosition(head, 2);
+    printLL(head);
+    
+    deleteNodeFromPosition(head, 1);
 
     // head = deleteHead(head);
-
-    printf("\n");
 
     printLL(head);
 
     return 0;
 }
 
-void printLL(node* head)
+node *createNodeLL(int data)
 {
-    node* tmp = head;
-
-    while (tmp != NULL)  // if node is NULL then exit loop
-    {
-        // print
-        printf("\n Node Addr:0x%x, Data: %d, Next Addr:0x%x", tmp, tmp->data, tmp->next);
-        tmp = tmp->next;  // point tmp to the next node
-    }
-}
-
-node* createNodeLL(int data)
-{
-    node* nn;
-    nn = (node*)malloc(sizeof(node));
+    node *nn;
+    nn = (node *)malloc(sizeof(node));
 
     nn->data = data;
     nn->next = NULL;
@@ -72,31 +60,16 @@ node* createNodeLL(int data)
     return nn;
 }
 
-node* addNodeToHead(node* head, node* newNode)
+node *addNodeToHead(node *head, node *newNode)
 {
-    newNode->next = head;  // point new node ptr to current head
+    newNode->next = head; // point new node ptr to current head
     return newNode;
 }
 
-node* findNodeContaining(node* head, int data)
+void insertNodeInPosition(node *head, int position, int data) // nth position from head, index starting at 0
 {
-    node* tmp = head;
-
-    while (tmp != NULL)  // if node is NULL then exit loop
-    {
-        if (tmp->data == data)
-        {
-            return tmp;
-        }
-        tmp = tmp->next;  // move tmp to the next node
-    }
-    return NULL;  // if not found
-}
-
-void insertNodeInPosition(node* head, int position, int data)  // nth position from head, index starting at 0
-{
-    node* tmp = head;
-    node* newNode;
+    node *tmp = head;
+    node *newNode;
     int i;
 
     if (position == 0)
@@ -109,15 +82,15 @@ void insertNodeInPosition(node* head, int position, int data)  // nth position f
         {
             if (tmp->next != NULL)
             {
-                tmp = tmp->next;  // traverse the list n times
+                tmp = tmp->next; // traverse the list n times
             }
             else
             {
-                return;  // if we are out of bounds
+                return; // if we are out of bounds
             }
         }
         // create new node
-        newNode = (node*)malloc(sizeof(node));
+        newNode = (node *)malloc(sizeof(node));
 
         // populate node with data
         newNode->data = data;
@@ -132,10 +105,25 @@ void insertNodeInPosition(node* head, int position, int data)  // nth position f
     }
 }
 
-void deleteNodeFromPosition(node* head, int position)  // nth position from head, index starting at 0
+node *findNodeContaining(node *head, int data)
 {
-    node* tmp = head;
-    node* nodeToDel;
+    node *tmp = head;
+
+    while (tmp != NULL) // if node is NULL then exit loop
+    {
+        if (tmp->data == data)
+        {
+            return tmp;
+        }
+        tmp = tmp->next; // move tmp to the next node
+    }
+    return NULL; // if not found
+}
+
+void deleteNodeFromPosition(node *head, int position) // nth position from head, index starting at 0
+{
+    node *tmp = head;
+    node *nodeToDel;
     int i;
 
     if (position == 0)
@@ -144,43 +132,57 @@ void deleteNodeFromPosition(node* head, int position)  // nth position from head
     }
     else if (position == 1)
     {
-        nodeToDel = tmp->next;        // point to the node that needs to be deleted
-        tmp->next = nodeToDel->next;  // break connection to the nodeToDel and connect to next
-        free(nodeToDel);              // de-allocate the memory from the deleted node
+        nodeToDel = tmp->next;       // point to the node that needs to be deleted
+        tmp->next = nodeToDel->next; // break connection to the nodeToDel and connect to next
+        free(nodeToDel);             // de-allocate the memory from the deleted node
         return;
     }
     else
     {
         for (i = 1; i < position; i++)
         {
-            tmp = tmp->next;  // tmp to the one before the node we want to delete
+            tmp = tmp->next; // tmp to the one before the node we want to delete
             if (tmp->next != NULL)
             {
-                nodeToDel = tmp->next;  // point to the node that needs to be deleted
+                nodeToDel = tmp->next; // point to the node that needs to be deleted
                 if (i == position - 1)
                 {
-                    tmp->next = nodeToDel->next;  // break connection to the nodeToDel and connect to next
-                    free(nodeToDel);              // de-allocate the memory from the deleted node
+                    tmp->next = nodeToDel->next; // break connection to the nodeToDel and connect to next
+                    free(nodeToDel);             // de-allocate the memory from the deleted node
                     return;
                 }
             }
             else
             {
                 printf("Cannot delete something beyond the end of the list");
-                return;  // if we are out of bounds
+                return; // if we are out of bounds
             }
         }
     }
 }
 
-node* deleteHead(node* head)  // returns new head
+node *deleteHead(node *head) // returns new head
 {
-    node* tmp = head;
-    node* nodeToDel;
+    node *tmp = head;
+    node *nodeToDel;
 
-    head = head->next;  // point head to the 2nd node
+    head = head->next; // point head to the 2nd node
     // tmp still points to the original head
-    free(tmp);  // de-allocate memory that is pointed to by tmp
+    free(tmp); // de-allocate memory that is pointed to by tmp
 
     return head;
+}
+
+void printLL(node *head)
+{
+    node *tmp = head;
+
+    while (tmp != NULL) // if node is NULL then exit loop
+    {
+        // print
+        printf("\n Node Addr:0x%x, Data: %d, Next Addr:0x%x", tmp, tmp->data, tmp->next);
+        tmp = tmp->next; // point tmp to the next node
+    }
+
+    printf("\n");
 }

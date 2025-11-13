@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 // void printIntArr(int arr[], int arrSize);
-void printIntArr(int* arr, int arrSize);
+void printIntArr(int *arr, int arrSize);
 
 int main()
 {
     int arrOfInts[6] = { 12223, 16432, 37882, 39947, 475, 388271 };
-    int* arrPtr;
+    int *arrPtr;
 
     // arrPtr = arrOfInts;
     // printIntArr(arrOfInts, 6);

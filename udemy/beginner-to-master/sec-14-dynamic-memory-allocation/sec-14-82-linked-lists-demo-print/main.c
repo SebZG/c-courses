@@ -4,19 +4,19 @@
 struct node_t
 {
     int data;
-    struct node_t* next;
+    struct node_t *next;
 };
 
 typedef struct node_t node;
 
-void printLL(node* head);
+void printLL(node *head);
 
 int main()
 {
     node a;
     node b;
     node c;
-    node* head;  // pointer to the first node
+    node *head; // pointer to the first node
 
     // populate the data
     a.data = 11;
@@ -43,9 +43,9 @@ int main()
     return 0;
 }
 
-void printLL(node* head)
+void printLL(node *head)
 {
-    node* tmp = head;
+    node *tmp = head;
 
     while (tmp != NULL)
     {

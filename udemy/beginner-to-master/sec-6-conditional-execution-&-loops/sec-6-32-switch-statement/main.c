@@ -5,7 +5,7 @@ int main()
 {
     int varCaseNo = 59;
 
-    switch(varCaseNo)
+    switch (varCaseNo)
     {
     case 0:
         printf("Case 0 was selected");

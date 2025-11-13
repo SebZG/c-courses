@@ -7,8 +7,8 @@ int main()
     int B = 5;
     int result;
 
-    int* ptrA;
-    int* ptrB;
+    int *ptrA;
+    int *ptrB;
 
     //pointer initialisation
     ptrA = &A;

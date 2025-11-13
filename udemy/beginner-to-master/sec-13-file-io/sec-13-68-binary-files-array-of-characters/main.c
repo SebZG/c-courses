@@ -3,7 +3,7 @@
 
 int main()
 {
-    FILE* filePtr;
+    FILE *filePtr;
     char funWords[51] = "fun fun fun fun";
     char readBuffer[51];
 
@@ -14,7 +14,7 @@ int main()
     filePtr = fopen("test.bin", "wb");
 
     //write funWords to file
-    fwrite(funWords,sizeof(funWords),1,filePtr);
+    fwrite(funWords, sizeof(funWords), 1, filePtr);
 
     fclose(filePtr);
 
@@ -25,13 +25,12 @@ int main()
     filePtr = fopen("test.bin", "rb");
 
     //read file, only one lot of up to 51 characters
-    fread(readBuffer,sizeof(readBuffer),1,filePtr);
+    fread(readBuffer, sizeof(readBuffer), 1, filePtr);
 
     //print whatever we read (which was one string)
-    printf("%s\n",readBuffer);
+    printf("%s\n", readBuffer);
 
     fclose(filePtr);
 
     return 0;
 }
-

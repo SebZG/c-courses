@@ -3,7 +3,7 @@
 
 int main()
 {
-    FILE* filePtr;
+    FILE *filePtr;
     char line[200];
 
     filePtr = fopen("Homer - Iliad Quote.txt", "r");

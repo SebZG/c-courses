@@ -7,7 +7,7 @@ int main()
 
     PwrBnksNo = 9;
 
-    if(PwrBnksNo!=10)
+    if (PwrBnksNo != 10)
     {
         printf("TRUE");
     }

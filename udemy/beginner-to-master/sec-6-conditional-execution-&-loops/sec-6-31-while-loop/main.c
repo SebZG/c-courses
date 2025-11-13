@@ -7,9 +7,9 @@ int main()
 
     number = 0;
 
-    while(number<10)
+    while (number < 10)
     {
-        number = number +1;
+        number = number + 1;
         printf("number = %d \n", number);
     }
 

@@ -13,16 +13,16 @@ typedef struct Pen_type Pen;
 
 int main()
 {
-    FILE* filePtr;
+    FILE *filePtr;
     Pen P0, P1;
 
     P0.penLengthMm = 50;
-    strcpy(P0.penColour,"White");
-    strcpy(P0.penModelName,"Snow");
+    strcpy(P0.penColour, "White");
+    strcpy(P0.penModelName, "Snow");
 
     P1.penLengthMm = 89;
-    strcpy(P1.penColour,"Yellow");
-    strcpy(P1.penModelName,"Sun");
+    strcpy(P1.penColour, "Yellow");
+    strcpy(P1.penModelName, "Sun");
 
     //print content of both structures
     printf("Structure P0:");
@@ -42,11 +42,10 @@ int main()
     filePtr = fopen("writePenData.bin", "wb");
 
     //write funWords to file
-    fwrite(&P0,sizeof(Pen),1,filePtr);
-    fwrite(&P1,sizeof(Pen),1,filePtr);
+    fwrite(&P0, sizeof(Pen), 1, filePtr);
+    fwrite(&P1, sizeof(Pen), 1, filePtr);
 
     fclose(filePtr);
 
     return 0;
 }
-

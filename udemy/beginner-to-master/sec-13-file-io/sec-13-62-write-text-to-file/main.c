@@ -12,7 +12,7 @@ a+ = append and read - if the file exists, append to it.
 
 int main()
 {
-    FILE* filePtr;
+    FILE *filePtr;
     char line[] = "This is a beautiful line";
 
     filePtr = fopen("New Text File lalala.txt", "w");
@@ -23,5 +23,4 @@ int main()
     fclose(filePtr);
 
     return 0;
- }
-
+}

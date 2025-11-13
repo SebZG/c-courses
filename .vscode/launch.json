@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/UserPC/OneDrive/Documents/c-coursess/udemy/beginner-to-master/sec-3-variables-&-data-types/sec-3-13-computer-memory",
-      "program": "c:/Users/UserPC/OneDrive/Documents/c-coursess/udemy/beginner-to-master/sec-3-variables-&-data-types/sec-3-13-computer-memory/build/Debug/outDebug",
+      "cwd": "c:/Users/UserPC/OneDrive/Documents/c-coursess/playground/guest-list-manager",
+      "program": "c:/Users/UserPC/OneDrive/Documents/c-coursess/playground/guest-list-manager/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

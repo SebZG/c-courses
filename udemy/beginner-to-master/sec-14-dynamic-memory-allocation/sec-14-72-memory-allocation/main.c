@@ -25,10 +25,10 @@ int main()
 
 int intAdder(int a, int b)
 {
-    int resultAdd;//live in the stack
-                  //during execution of this function
+    int resultAdd; //live in the stack
+                   //during execution of this function
 
-    resultAdd = a+b;
+    resultAdd = a + b;
 
     return resultAdd;
 }
@@ -37,7 +37,7 @@ int intMultiplier(int a, int b)
 {
     int resultMultiply;
 
-    resultMultiply = a*b;
+    resultMultiply = a * b;
 
     return resultMultiply;
 }

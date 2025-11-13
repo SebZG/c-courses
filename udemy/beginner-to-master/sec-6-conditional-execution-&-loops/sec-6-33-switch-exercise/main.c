@@ -10,7 +10,7 @@ int main()
 
     printf("\n");
 
-    switch(userIn)
+    switch (userIn)
     {
     case 100:
         printf("ID: %d\n", userIn);

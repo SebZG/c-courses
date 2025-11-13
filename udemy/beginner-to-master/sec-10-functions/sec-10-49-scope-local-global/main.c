@@ -3,8 +3,6 @@
 
 void printHi(void);
 
-
-
 int main()
 {
     int a;
@@ -16,6 +14,7 @@ int main()
     printf("a lives in %x\n", &a);
 
     printHi();
+
     printf("Hi from the main program\n");
     printf("a = %d\n", a);
     printf("a lives in %x\n", &a);
@@ -33,7 +32,3 @@ void printHi(void)
     printf("a = %d\n", a);
     printf("a lives in %x\n", &a);
 }
-
-
-
-

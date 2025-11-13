@@ -16,6 +16,6 @@ int main()
 
 void printHi(int val) // definition
 {
-    printf("\nThe value sent from the function call is:%d\n", val);
+    printf("\nThe value sent from the function call is: %d\n", val);
     printf("Hi from the printHi function\n");
 }

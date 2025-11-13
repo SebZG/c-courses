@@ -4,7 +4,7 @@
 int main()
 {
     int var0 = 11;
-    int* myPtr;
+    int *myPtr;
 
     myPtr = &var0;
 

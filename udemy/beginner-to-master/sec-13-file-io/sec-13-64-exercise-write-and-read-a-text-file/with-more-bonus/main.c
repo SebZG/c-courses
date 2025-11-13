@@ -5,12 +5,12 @@
 
 int main()
 {
-    FILE* fileInPtr;
+    FILE *fileInPtr;
     char line[200];
 
     fileInPtr = fopen("Weather Information.txt", "r");
 
-    while (!feof(fileInPtr))  // read line by line
+    while (!feof(fileInPtr)) // read line by line
     {
         fgets(line, 200, fileInPtr);
 

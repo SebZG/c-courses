@@ -9,7 +9,7 @@ int main()
     int var_4;  //data type = int
     int var_5;  //data type = int
     int var_6;  //data type = int
-    int* var_7; //data type = int pointer
+    int *var_7; //data type = int pointer
     int var_8;  //data type = int
 
     var_1 = 0x5DA96D;
@@ -28,7 +28,9 @@ int main()
     printf("var_4 contains %x and lives in location %x\n", var_4, &var_4);
     printf("var_5 contains %x and lives in location %x\n", var_5, &var_5);
     printf("var_6 contains %x and lives in location %x\n", var_6, &var_6);
-    printf("var_7 contains %x and lives in location %x\n", var_7, &var_7);//var_7 is a special variable, it is a pointer
+    printf("var_7 contains %x and lives in location %x\n",
+           var_7,
+           &var_7); //var_7 is a special variable, it is a pointer
     printf("var_8 contains %x and lives in location %x\n", var_8, &var_8);
 
     printf("\nde-referencing var_7 gives us %x\n", *var_7);
