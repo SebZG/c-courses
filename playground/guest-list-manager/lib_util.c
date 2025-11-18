@@ -25,6 +25,7 @@ node *createGuest(float standardPrice, float consessionPrice)
     }
 
     printf("\nGuest's first name: ");
+    // snprintf()
     if (scanf("%49s", fName) != 1)
     {
         free(newGuest);

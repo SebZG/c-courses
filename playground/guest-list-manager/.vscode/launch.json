@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/UserPC/OneDrive/Documents/c-coursess/C-Tutorial-app/14-data-structures/04-queues",
-      "program": "c:/Users/UserPC/OneDrive/Documents/c-coursess/C-Tutorial-app/14-data-structures/04-queues/build/Debug/outDebug",
+      "cwd": "c:/Users/UserPC/OneDrive/Documents/c-coursess/playground/guest-list-manager",
+      "program": "c:/Users/UserPC/OneDrive/Documents/c-coursess/playground/guest-list-manager/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
