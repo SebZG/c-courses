@@ -20,6 +20,7 @@ int main()
                 swapped = true;
             }
         }
+        
         if (!swapped)
         {
             break;

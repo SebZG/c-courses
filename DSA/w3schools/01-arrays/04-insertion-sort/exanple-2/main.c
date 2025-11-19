@@ -19,6 +19,7 @@ int main()
             insert_idx = j;
             j--; 
         }
+        
         arr[insert_idx] = curr_val;
     }
 

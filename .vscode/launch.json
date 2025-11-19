@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/UserPC/OneDrive/Documents/c-coursess/DSA/w3schools/01-arrays/05-quick-sort/example-1",
-      "program": "c:/Users/UserPC/OneDrive/Documents/c-coursess/DSA/w3schools/01-arrays/05-quick-sort/example-1/build/Debug/outDebug",
+      "cwd": "c:/Users/UserPC/OneDrive/Documents/c-coursess/DSA/w3schools/01-arrays/05-quick-sort/playground",
+      "program": "c:/Users/UserPC/OneDrive/Documents/c-coursess/DSA/w3schools/01-arrays/05-quick-sort/playground/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
