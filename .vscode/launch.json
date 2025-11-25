@@ -2,23 +2,25 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C/C++ Runner: Debug Session",
+      "name": "Debug active C file (gcc + gdb)",
       "type": "cppdbg",
       "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "c:/Users/UserPC/OneDrive/Documents/c-coursess/DSA/w3schools/01-arrays/05-quick-sort/playground",
-      "program": "c:/Users/UserPC/OneDrive/Documents/c-coursess/DSA/w3schools/01-arrays/05-quick-sort/playground/build/Debug/outDebug",
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
       "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
+      "miDebuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
           "text": "-enable-pretty-printing",
           "ignoreFailures": true
         }
-      ]
+      ],
+      "preLaunchTask": "C/C++: gcc.exe build active file"
     }
   ]
 }
