@@ -1,0 +1,11 @@
+%d or %i: Signed integer
+%u: Unsigned integer
+%f: Floating-point number (default format)
+%e or %E: Floating-point in scientific notation
+%g or %G: Floating-point in either fixed or scientific notation (shorter format)
+%c: Single character
+%s: String
+%p: Pointer address
+%%: Literal % character
+
+%[flags][width][.precision][length]specifier

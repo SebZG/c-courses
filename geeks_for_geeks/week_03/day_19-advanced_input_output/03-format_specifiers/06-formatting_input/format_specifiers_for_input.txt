@@ -1,0 +1,6 @@
+%d: Integer
+%f: Float
+%lf: Double
+%c: Character (including whitespace)
+%s: String (stops at whitespace)
+%[^...] : Scanset for custom character sets (e.g., %[^ \n] reads until space or newline).
